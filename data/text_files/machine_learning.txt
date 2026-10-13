@@ -1,0 +1,76 @@
+=====================================================
+MACHINE LEARNING: FUNDAMENTALS & ARCHITECTURE
+=====================================================
+
+1. WHAT IS MACHINE LEARNING?
+- Definition: A subfield of Artificial Intelligence (AI) that enables systems to learn patterns from data and improve performance without being explicitly programmed.
+- Traditional Programming vs. ML:
+  * Traditional: Data + Rules/Code -> Answers
+  * Machine Learning: Data + Answers -> Rules/Model
+- Core Goal: Generalization—making accurate predictions or decisions on unseen, future data.
+
+2. MAJOR LEARNING PARADIGMS
+- Supervised Learning:
+  * Trained on labeled data (input features X paired with target labels y).
+  * Tasks:
+    - Classification: Predicting discrete categories (e.g., spam vs. not spam, fraud detection).
+    - Regression: Predicting continuous values (e.g., house prices, stock trends).
+- Unsupervised Learning:
+  * Finds hidden patterns or intrinsic structures in unlabeled data.
+  * Tasks:
+    - Clustering: Grouping similar data points (e.g., customer segmentation, K-Means).
+    - Dimensionality Reduction: Compressing features while retaining variance (e.g., PCA, t-SNE).
+    - Anomaly Detection: Identifying unusual outliers in data.
+- Semi-Supervised Learning:
+  * Leverages a small amount of labeled data with a large volume of unlabeled data.
+- Reinforcement Learning (RL):
+  * An agent learns optimal actions through trial-and-error in an environment to maximize cumulative rewards (e.g., game playing, robotics).
+
+3. THE END-TO-END ML WORKFLOW / PIPELINE
+- Step 1: Problem Definition (Frame the business objective into an ML task).
+- Step 2: Data Collection & Ingestion.
+- Step 3: Data Cleaning (Handling missing values, duplicates, and outliers).
+- Step 4: Exploratory Data Analysis (EDA) & Feature Engineering:
+  * Scaling/Normalization (StandardScaler, MinMaxScaler).
+  * Encoding categorical variables (One-Hot Encoding, Label Encoding).
+  * Feature selection and extraction.
+- Step 5: Data Splitting:
+  * Training set (typically 70-80%), Validation set (10-15%), and Test set (10-15%).
+  * K-Fold Cross-Validation for robust evaluation.
+- Step 6: Model Training & Hyperparameter Tuning (GridSearchCV, Optuna).
+- Step 7: Model Evaluation on test data.
+- Step 8: Deployment & MLOps (Serving via API, monitoring concept drift and data drift).
+
+4. COMMON ALGORITHMS
+- Linear Models: Linear Regression, Logistic Regression, Ridge/Lasso.
+- Tree-Based Models: Decision Trees, Random Forests (bagging).
+- Boosting Models: Gradient Boosting, XGBoost, LightGBM, CatBoost (sequential learning).
+- Distance-Based Models: k-Nearest Neighbors (k-NN), Support Vector Machines (SVM).
+- Clustering: K-Means, DBSCAN, Hierarchical Clustering.
+- Deep Learning / Neural Networks: Multi-Layer Perceptrons (MLP), CNNs (vision), Transformers (NLP).
+
+5. KEY EVALUATION METRICS
+- Classification Metrics:
+  * Accuracy: Overall correct predictions (can be misleading on imbalanced datasets).
+  * Precision: Proportion of true positive predictions out of all predicted positives.
+  * Recall (Sensitivity): Proportion of true positive predictions out of all actual positives.
+  * F1-Score: Harmonic mean of Precision and Recall.
+  * ROC-AUC: Trade-off curve between True Positive Rate and False Positive Rate.
+- Regression Metrics:
+  * Mean Squared Error (MSE) and Root Mean Squared Error (RMSE): Penalize large errors heavily.
+  * Mean Absolute Error (MAE): Average magnitude of errors without direction.
+  * R-squared (R²): Proportion of variance explained by the model.
+
+6. CORE CHALLENGES & PRINCIPLES
+- Bias-Variance Tradeoff:
+  * High Bias (Underfitting): Model is overly simplistic and misses underlying patterns.
+  * High Variance (Overfitting): Model memorizes training noise and fails to generalize to test data.
+- Data Leakage: When target or future test information accidentally contaminates training data.
+- Curse of Dimensionality: Performance degrades and data sparseness increases as the number of features grows excessively.
+
+7. POPULAR PYTHON TOOLS & LIBRARIES
+- Data Handling: NumPy, Pandas, Polars.
+- Classical ML: Scikit-learn, XGBoost, LightGBM.
+- Deep Learning: PyTorch, TensorFlow, Keras.
+- Tracking & MLOps: MLflow, Weights & Biases (W&B), DVC.
+    
